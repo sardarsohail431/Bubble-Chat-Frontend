@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+body{
+  font-family: 'ABeeZee', sans-serif;
+  overflow-x: hidden;
+}
+input{
+  border: 2px solid #888 !important;
+}
+input[type="file"]{
+  border: none !important;
+}
+input:focus{
+  outline: none !important;
+  border-color: green !important;
+}
+input{
+  padding: 7px 3px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+  ::-webkit-scrollbar-thumb {
+  background: #888; 
+    border-radius:10px;
+}
+
+.react-input-emoji--input{
+  width: max(70vw,60vw,200px) !important;
+}
+
+.react-input-emoji--container{
+  border: 2px solid green!important;
+}
+
+dialog::backdrop{
+  background-image: linear-gradient(45deg,rgba(255,0,0,0.2),rgba(128,0,128,0.2));
+}
